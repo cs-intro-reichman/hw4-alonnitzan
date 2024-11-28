@@ -18,13 +18,35 @@ public class MyString {
 
     /** Returns the lowercase version of the given string. */
     public static String lowerCase(String str) {
-        // Replace the following statement with your code
-        return null;
+        String newStr = "";
+        for (int i = 0; i < str.length(); i++){
+            
+            int ch = (int) str.charAt(i);
+
+            // if upper case
+            if (ch >= 65 && ch <= 90) ch = ch + 32;
+
+            newStr += (char) ch;
+        }
+
+        return newStr;
     }
 
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
-        // Replace the following statement with your code
+        
+        for (int i = 0; i <= str1.length() - str2.length(); i++){
+            boolean contain = true;
+            int index = i;
+
+            for (int j = 0; j < str2.length(); j++){
+                if (str1.charAt(index) != str2.charAt(j)) contain = false;
+                else index += 1;
+            }
+
+            if (contain) return true;
+        }
+
         return false;
     }
 }
