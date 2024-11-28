@@ -25,7 +25,7 @@ public class Primes {
         }
         
         // print the conclusion
-        System.out.println("Prime Numbers up to " + n + ":");
+        System.out.println("Prime numbers up to " + n + ":");
         
         for (int i = 0; i < arr.length; i++){
             if (arr[i]){
