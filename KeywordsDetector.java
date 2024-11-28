@@ -38,9 +38,6 @@ public class KeywordsDetector {
         
     }
 
-
-
-
     /** Returns the lowercase version of the given string. */
     public static String lowerCase(String str) {
         String newStr = "";
